@@ -10,6 +10,8 @@ public class Main {
         System.out.println("Pick Rock, Paper, or Scissors to Start (Rock = \"0\", Paper = \"1\", and Scissors = \"2\").");
         Scanner keyboard = new Scanner(System.in);
         boolean loop = true;
+        int cP=0;
+        int uP=0;
         while (loop) {
             int u = keyboard.nextInt();
             int c = (int) (Math.random() * 3);
