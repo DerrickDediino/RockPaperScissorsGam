@@ -15,6 +15,24 @@ public class Main {
         while (loop) {
             int u = keyboard.nextInt();
             int c = (int) (Math.random() * 3);
+            if(c==0&&u==2||c==1&&u==0||c==2&&u==1){
+                System.out.println("Computer Choice: "+computerInput(c)+"\nYour Choice: "+userChoice(u)+"\nComputer Wins...");
+                cP++;
+                System.out.println("Score: "+"\nComputer: "+cP+"\nYou: "+uP);
+            }
+            else if (c==1&&u==2||c==0&&u==1||c==2&&u==0){
+                System.out.println("Your Choice: "+userChoice(u)+"\nComputer Choice: "+computerInput(c)+"\nYou Win!!!");
+                uP++;
+                System.out.println("Score: "+"\nYou: "+uP+"\nComputer: "+cP);
+            }
+            else if (c==1&&u==1||c==0&&u==0||c==2&&u==2){
+                System.out.println("Computer Choice: "+computerInput(c)+"\nYour Choice: "+userChoice(u)+"\nDraw.");
+                cP++; uP++;
+                System.out.println("Score: "+"\nComputer: "+cP+"\nYou: "+uP);
+            }
+            else {
+                System.out.println("Invalid");
+            }
         }
     }
     public static String computerInput(int c){
