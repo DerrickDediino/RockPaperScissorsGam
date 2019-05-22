@@ -9,6 +9,11 @@ public class Main {
         System.out.println("Welcome to the Rock, Paper, Scissors Game.  You have 7 rounds.");
         System.out.println("Pick Rock, Paper, or Scissors to Start (Rock = \"0\", Paper = \"1\", and Scissors = \"2\").");
         Scanner keyboard = new Scanner(System.in);
+        boolean loop = true;
+        while (loop) {
+            int u = keyboard.nextInt();
+            int c = (int) (Math.random() * 3);
+        }
     }
     public static String computerInput(int c){
         String[]rPS=new String[3];
