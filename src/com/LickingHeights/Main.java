@@ -33,6 +33,23 @@ public class Main {
             else {
                 System.out.println("Invalid");
             }
+            if (cP>uP&&cP+uP>=7){
+                System.out.println("Game Over.\nComputer Wins.\nPress 3 to play again.");
+            }
+            else if (uP>cP&&cP+uP>=7){
+                System.out.println("Congratulations!!!\nYou Won the Game!\nPress 3 to play again");
+            }
+            if (cP+uP>=7) {
+                int pA = keyboard.nextInt();
+                if (pA == 3) {
+                    loop = true;
+                    cP = 0;
+                    uP = 0;
+                }
+                else {
+                    loop=false;
+                }
+            }
         }
     }
     public static String computerInput(int c){
