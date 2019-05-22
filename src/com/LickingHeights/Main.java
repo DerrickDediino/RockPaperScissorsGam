@@ -25,4 +25,14 @@ public class Main {
                 return rPS[2];
         }return "Invalid";
     }
+    public static String userChoice(int keyboard){
+        switch (keyboard){
+            case 0:
+                return "rock";
+            case 1:
+                return "paper";
+            case 2:
+                return "scissors";
+        }return "Invalid";
+    }
 }
